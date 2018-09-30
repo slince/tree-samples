@@ -20,20 +20,19 @@ class BFS implements Traversal
      */
     public function traver(Node $node, $visitor)
     {
-        $stack = new \SplQueue();
-        $stack->push($node);
+        $queue = new \SplQueue();
+        $queue->enqueue($node);
 
-        while (!$stack->isEmpty()) {
-            $stack->top();
-            $node = $stack->pop();
+        while (!$queue->isEmpty()) {
+            $node = $queue->dequeue();
             $visitor($node);
 
             //压左子树
             if ($node->getLeft()) {
-                $stack->push($node->getLeft());
+                $queue->push($node->getLeft());
             }
             if ($node->getRight()) {
-                $stack->push($node->getRight());
+                $queue->push($node->getRight());
             }
         }
     }
