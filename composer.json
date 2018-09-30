@@ -1,0 +1,26 @@
+{
+    "name": "slince/tree-samples",
+    "description": "树形结构遍历示例",
+    "keywords": ["tree", "tree-travel", "二叉树"],
+    "authors": [
+        {
+            "name": "Taosikai",
+            "email": "taosikai@yeah.net"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slince\\Tree\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Slince\\Tree\\Tests\\": "./tests"
+        }
+    }
+}
