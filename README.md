@@ -110,10 +110,12 @@ $ composer require slince/tree-samples
 
 ```php
 
+// 创建三个节点的二叉树
 $leftChild = new Slince\Tree\Node(2);
 $rightChild = new Slince\Tree\Node(3);
 $node = new Slince\Tree\Node(1, $leftChild, $rightChild);
 
+// 使用宽度优先算法遍历
 $bfs = new Slince\Tree\Traversal\BFS();
 $numbers = [];
 $bfs->travel($node, function(Node $node) use(&$numbers){
@@ -122,6 +124,7 @@ $bfs->travel($node, function(Node $node) use(&$numbers){
 
 echo implode(',', $numbers);  // 输出 1,2,3
 
+// 使用深度优先算法遍历
 $dfs = new Slince\Tree\Traversal\DFS();
 $numbers = [];
 $bfs->travel($node, function(Node $node) use(&$numbers){
