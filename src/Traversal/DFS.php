@@ -18,7 +18,7 @@ class DFS implements Traversal
     /**
      * {@inheritdoc}
      */
-    public function traver(Node $node, $visitor)
+    public function travel(Node $node, $visitor)
     {
         $stack = new \SplStack();
         $stack->push($node);

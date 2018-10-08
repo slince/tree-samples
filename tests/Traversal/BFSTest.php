@@ -14,7 +14,7 @@ class BFSTest extends TestCase
         $dfs = new BFS();
 
         $numbers = [];
-        $dfs->traver($node, function(Node $node) use(&$numbers){
+        $dfs->travel($node, function(Node $node) use(&$numbers){
             $numbers[] = $node->getValue();
         });
 

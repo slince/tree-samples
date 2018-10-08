@@ -23,5 +23,5 @@ interface Traversal
      * @param callable $visitor
      * @return array
      */
-    public function traver(Node $node, $visitor);
+    public function travel(Node $node, $visitor);
 }

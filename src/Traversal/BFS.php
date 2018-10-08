@@ -18,7 +18,7 @@ class BFS implements Traversal
     /**
      * {@inheritdoc}
      */
-    public function traver(Node $node, $visitor)
+    public function travel(Node $node, $visitor)
     {
         $queue = new \SplQueue();
         $queue->enqueue($node);
