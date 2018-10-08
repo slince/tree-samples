@@ -122,7 +122,8 @@ $bfs->travel($node, function(Node $node) use(&$numbers){
     $numbers[] = $node->getValue();
 });
 
-echo implode(',', $numbers);  // 输出 1,2,3
+// 输出遍历顺序 
+echo implode(',', $numbers);  // 1,2,3  
 
 // 使用深度优先算法遍历
 $dfs = new Slince\Tree\Traversal\DFS();
@@ -131,6 +132,7 @@ $bfs->travel($node, function(Node $node) use(&$numbers){
     $numbers[] = $node->getValue();
 });
 
+// 对于三个节点的二叉树，dfs和bfs的遍历顺序是一样的，有兴趣的可以自行尝试7个节点的二叉树遍历。
 ```
 
 ## LICENSE
