@@ -5,8 +5,8 @@
 [![Latest Stable Version](https://img.shields.io/packagist/v/slince/tree-samples.svg?style=flat-square&label=stable)](https://packagist.org/packages/slince/tree-samples)
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/slince/tree-samples.svg?style=flat-square)](https://scrutinizer-ci.com/g/slince/tree-samples/?branch=master)
 
-包含深度优先算法与广度优先算法; 示例采用的是非递归算法借用 `SplStack` 和 `SplQueue` 
-实现两种算法的遍历。再开始讲算法之前，我们先创建一个二叉树节点类 `Node`,[源码](./src/Node.php)：
+包含深度优先算法与广度优先算法; 本示例采用的是非递归算法；借用 `SplStack` 和 `SplQueue` 
+实现两种算法的遍历。在开始讲算法之前，我们先创建一个二叉树节点类 `Node`,[源码](./src/Node.php)：
 
 ```php
 class Node
