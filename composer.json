@@ -2,6 +2,7 @@
     "name": "slince/tree-samples",
     "description": "树形结构遍历示例",
     "keywords": ["tree", "tree-travel", "二叉树"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Taosikai",
